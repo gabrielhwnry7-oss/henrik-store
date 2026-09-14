@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Henrik Store — acessórios e produtos de tecnologia. Escolha seus produtos e peça pelo WhatsApp.">
+  <title>Henrik Store | Tecnologia e acessórios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="brand-mark">H</span>
+        <span>HENRIK <b>STORE</b></span>
+      </a>
+      <nav>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="cart-btn" id="openCart" aria-label="Abrir carrinho">
+        Carrinho <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">HENRIK STORE</p>
+          <h1>Tecnologia e acessórios <span>do seu jeito.</span></h1>
+          <p class="hero-text">Encontre seu próximo acessório, confira o estoque e faça seu pedido diretamente pelo WhatsApp.</p>
+          <a href="#produtos" class="btn btn-primary">VER PRODUTOS</a>
+          <a href="#sobre" class="btn btn-outline">CONHEÇA A LOJA</a>
+        </div>
+        <div class="hero-card">
+          <div class="hero-h">H</div>
+          <p>ACESSÓRIOS • TECNOLOGIA • ESTILO</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories container">
+      <button class="category active" data-category="Todos">Todos</button>
+      <button class="category" data-category="Capinhas">Capinhas</button>
+      <button class="category" data-category="Películas">Películas</button>
+      <button class="category" data-category="Carregadores">Carregadores</button>
+      <button class="category" data-category="Cabos">Cabos</button>
+      <button class="category" data-category="Áudio">Áudio</button>
+      <button class="category" data-category="Acessórios">Acessórios</button>
+    </section>
+
+    <section id="produtos" class="products-section container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CATÁLOGO</p>
+          <h2>Produtos em estoque</h2>
+        </div>
+        <input id="search" class="search" type="search" placeholder="Buscar produto...">
+      </div>
+      <div id="productsGrid" class="products-grid"></div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">QUEM SOMOS NÓS?</p>
+          <h2>Uma loja feita para quem gosta de tecnologia.</h2>
+        </div>
+        <p>A Henrik Store reúne acessórios e produtos de tecnologia em um catálogo simples e fácil de consultar. Você escolhe o que deseja, adiciona ao carrinho e envia o pedido pelo WhatsApp. Sem complicação.</p>
+      </div>
+    </section>
+
+    <section id="contato" class="contact container">
+      <p class="eyebrow">FALE CONOSCO</p>
+      <h2>Gostou de algum produto?</h2>
+      <p>Monte seu pedido e envie para a Henrik Store pelo WhatsApp.</p>
+      <button class="btn btn-primary" id="contactWhatsApp">PEDIR PELO WHATSAPP</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Henrik Store</span>
+      <span>Catálogo online • Pedidos pelo WhatsApp</span>
+    </div>
+  </footer>
+
+  <div id="cartOverlay" class="overlay hidden">
+    <aside class="cart">
+      <div class="cart-head">
+        <h2>Seu carrinho</h2>
+        <button id="closeCart" class="close">×</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-bottom">
+        <div class="total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+        <button class="btn btn-primary full" id="checkout">ENVIAR PEDIDO PELO WHATSAPP</button>
+        <button class="clear" id="clearCart">Limpar carrinho</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
