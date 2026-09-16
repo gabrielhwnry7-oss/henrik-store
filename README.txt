@@ -1,48 +1,23 @@
-# HENRIK STORE — Site catálogo
+HENRIK STORE — VERSÃO ATUALIZADA
 
-## O que já funciona
-- Catálogo responsivo para celular e computador
-- Busca por produto
-- Filtro por categoria
-- Carrinho de compras
-- Quantidade e remoção de itens
-- Cálculo automático do total
-- Carrinho salvo no navegador
-- Geração automática do pedido para WhatsApp
+Arquivos principais:
+- index.html
+- style.css
+- script.js
+- images/referencias/ (fotos de referência já incluídas)
 
-## 1. Configurar o WhatsApp
-Abra `script.js` e altere:
-const WHATSAPP_NUMBER = "5500000000000";
+WhatsApp configurado:
+5531998929423
 
-Exemplo para um número brasileiro:
-const WHATSAPP_NUMBER = "5531999999999";
+O catálogo usa os 58 itens da tabela enviada pelo cliente, com preço final e estoque cadastrados.
+O pedido é montado no carrinho e enviado para o WhatsApp.
 
-Use somente números: 55 + DDD + telefone.
+COMO PUBLICAR NO GITHUB
+1. Abra o repositório da Henrik Store.
+2. Substitua index.html, style.css e script.js pelos arquivos desta pasta.
+3. Envie também a pasta images inteira.
+4. Faça o commit.
+5. Se usar GitHub Pages, mantenha index.html na raiz.
 
-## 2. Alterar produtos
-No começo do `script.js`, procure `const products = [...]`.
-Cada produto possui:
-id, name, category, price, stock e icon.
-
-Você pode trocar os produtos, preços e estoque diretamente ali.
-
-## 3. Colocar fotos reais
-A versão inicial usa símbolos como imagem de demonstração.
-Para usar fotos reais, depois podemos transformar cada produto em:
-image: "images/nome-do-produto.jpg"
-e colocar as imagens na pasta `images`.
-
-## 4. Publicar
-Esta versão é um site estático e pode ser publicada em serviços de hospedagem estática.
-Depois de configurar o WhatsApp e os produtos, basta enviar `index.html`, `style.css` e `script.js`.
-
-## Próximos upgrades recomendados
-- Painel administrativo para cadastrar produtos sem mexer no código
-- Upload de fotos
-- Estoque real
-- Produtos por modelo de celular
-- Promoções/descontos
-- Domínio próprio
-- Analytics
-- Botão de Instagram
-- Página individual de produto
+OBSERVAÇÃO SOBRE AS FOTOS
+As fotos incluídas são referências fornecidas para representar as linhas de produtos. Uma mesma foto pode aparecer em vários modelos da mesma linha, conforme solicitado.
